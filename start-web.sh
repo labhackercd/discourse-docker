@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sed -i -e "s/DISCOURSE_CONTACT_EMAIL/${DISCOURSE_CONTACT_EMAIL}/g" config/site_settings.yml
 sed -i -e "s/DISCOURSE_CONTACT_URL/${DISCOURSE_CONTACT_URL}/g" config/site_settings.yml
 sed -i -e "s/DISCOURSE_NOTIFICATION_EMAIL/${DISCOURSE_NOTIFICATION_EMAIL}/g" config/site_settings.yml
