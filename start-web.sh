@@ -8,3 +8,9 @@ sed -i -e "s/DISCOURSE_APPLE_TOUCH_ICON_URL/${DISCOURSE_APPLE_TOUCH_ICON_URL}/g"
 sed -i -e "s/DISCOURSE_SSO_URL/${DISCOURSE_SSO_URL}/g" config/site_settings.yml
 sed -i -e "s/DISCOURSE_SSO_SECRET/${DISCOURSE_SSO_SECRET}/g" config/site_settings.yml
 sed -i -e "s/DISCOURSE_FORCE_HOSTNAME/${DISCOURSE_FORCE_HOSTNAME}/g" config/site_settings.yml
+
+bundle exec rake db:create db:migrate
+bundle exec rake assets:precompile
+bundle exec rake create_admin
+
+bundle exec unicorn
