@@ -1093,7 +1093,7 @@ developer:
     client: true
     hidden: true
   wizard_enabled:
-    default: true
+    default: false
     hidden: true
   bypass_wizard_check:
     default: false
