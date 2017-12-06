@@ -1096,7 +1096,7 @@ developer:
     default: false
     hidden: true
   bypass_wizard_check:
-    default: false
+    default: true
     hidden: true
   logging_provider:
     hidden: true
