@@ -21,7 +21,7 @@ while true; do
 done
 
 bundle exec rake db:create db:migrate
-# bundle exec rake assets:precompile
+bundle exec rake assets:precompile
 bundle exec rake admin:create
 
 bundle exec sidekiq -e production -d -l sidekiq.log
