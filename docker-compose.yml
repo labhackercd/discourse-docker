@@ -19,15 +19,15 @@ services:
       DISCOURSE_DB_USERNAME: 'root'
       DISCOURSE_DB_PASSWORD: 'root'
       DISCOURSE_HOSTNAME: 'localhost'
-      DISCOURSE_SMTP_ADDRESS: smtp.gmail.com
+      DISCOURSE_SMTP_ADDRESS:
       DISCOURSE_SMTP_PORT: 587
-      DISCOURSE_SMTP_USER_NAME: 'matheuzin@gmail.com'
-      DISCOURSE_SMTP_PASSWORD: '19930113'
-      DISCOURSE_DEVELOPER_EMAILS: 'matheus.souza.fernandes@gmail.com'
+      DISCOURSE_SMTP_USER_NAME: ''
+      DISCOURSE_SMTP_PASSWORD: ''
+      DISCOURSE_DEVELOPER_EMAILS: ''
       DISCOURSE_REDIS_HOST: 'redis'
       DISCOURSE_REDIS_PORT: 6379
       DISCOURSE_RELATIVE_URL_ROOT: '/expressao'
-      DISCOURSE_CONTACT_EMAIL: 'matheuzin@gmail.com'
+      DISCOURSE_CONTACT_EMAIL: ''
       DISCOURSE_CONTACT_URL: 'localhost'
       DISCOURSE_NOTIFICATION_EMAIL: 'noreply@dicourse.org'
       DISCOURSE_LOGO_URL: '\/images\/d-logo-sketch.png'
