@@ -41,7 +41,7 @@ required:
     type: email
     shadowed_by_global: true
   site_contact_username:
-    default: 'ADMIN_USERNAME'
+    default: 'DISCOURSE_SITE_CONTACT_USERNAME'
     type: username
   logo_url:
     client: true
@@ -340,7 +340,7 @@ users:
     max: 60
   max_username_length:
     client: true
-    default: 20
+    default: 60
     min: 8
     max: 60
   reserved_usernames:
@@ -361,7 +361,7 @@ users:
     min: 1
     max: 10
   block_common_passwords: true
-  username_change_period: 3
+  username_change_period: 0
   email_editable: false
   logout_redirect:
     client: true
@@ -392,7 +392,7 @@ users:
     default: false
   prioritize_username_in_ux:
     client: true
-    default: true
+    default: false
   email_token_valid_hours:
     default: 48
     min: 1
@@ -1171,7 +1171,7 @@ backups:
     default: 5
     shadowed_by_global: true
   automatic_backups_enabled:
-    default: true
+    default: false
     shadowed_by_global: true
   backup_frequency:
     min: 1
